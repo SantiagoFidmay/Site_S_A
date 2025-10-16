@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #D93030,#8C1B1B,#150826);
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 130px;
+    padding: 1px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    margin-left: 90px;
+    text-decoration: underline;
+}
+a{
+    font-size: 19px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #0056b3;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS';
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+      background: linear-gradient(to right,#D93030);
+        font-size: 68px; 
+  color: #ffffff;
+  text-shadow:
+    0 0px 1px #ffffff, 
+    0 0 0px #fff,
+    0 0 0px #0059ff, 
+    0 0 0px rgb(63, 98, 255),
+    0 0 0px white,
+    0 0 0px rgb(0, 38, 255),
+    0 0 5px white,
+    0 0 00px white; 
+  
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+
+}
+
+h2 {
+    max-width: 1100px;
+    margin: 30px auto;
+    text-align: justify; 
+    font-size: 18px;
+    line-height: 1.6;   
+    padding: 0 20px;
+    color: white;    
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 35px;
+}
+h4{
+     color: white;
+     font-size: 28px;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    max-width: 1300px; 
+    margin: 30px auto;
+    padding: 10px;
+}
+.galeria a:last-child {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+    max-width: 720px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.galeria a {
+    display: block;
+    text-decoration: none;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #333;
+    font-size: 20px;
+}
+
+
+.LogoSesiSenai img {
+    max-width: 200px;  
+    width: 100%;       
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+.word {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.power {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.excel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.word img {
+    max-width: 620px; 
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.power img {
+    max-width: 820px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.excel img {
+    max-width: 820px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
