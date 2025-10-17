@@ -226,3 +226,218 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
+@media (max-width: 1024px) {
+    .menu {
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    a {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 17px;
+        padding: 0 15px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-align: left;
+        padding: 0 15px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .LogoSesiSenai img {
+        max-width: 150px;
+    }
+}
+/* --- Ajustes específicos para celulares (ex: 390x844) --- */
+@media (max-width: 420px) {
+
+    /* Garante um pouco de "respiro" do topo e remove margem gigante do h1 */
+    body {
+        padding-top: 8px;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        height: auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    /* Logo menor, centrado */
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 56px;    /* reduzido para caber melhor */
+        max-width: 90%;
+        object-fit: contain;
+    }
+
+    /* Menu: tornamos vertical, sem sublinhado visual excessivo */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-left: 0;
+        width: 100%;
+        padding: 4px 10px 12px;
+        box-sizing: border-box;
+    }
+
+    .menu a {
+        display: block;
+        text-decoration: none;      /* remove sublinhado */
+        font-size: 15px;            /* fonte menor para caber */
+        line-height: 1.2;
+        color: #012a5a;             /* contraste com fundo branco */
+        padding: 6px 8px;
+        border-radius: 6px;
+    }
+
+    .menu a:hover {
+        background: rgba(0,0,0,0.04);
+        color: #003a8c;
+    }
+
+    /* H1 e H2 mais compactos para não saírem da tela */
+    h1 {
+        font-size: 26px;
+        margin-top: 18px;
+        padding: 0 12px;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 15px;
+        max-width: 100%;
+        padding: 0 14px;
+        margin: 18px auto;
+        text-align: left;  /* leitura melhor no celular */
+    }
+
+    h3 {
+        font-size: 20px;
+        padding: 0 12px;
+    }
+
+    /* Galeria: 1 coluna com imagens menores e sem overflow */
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 12px 18px;
+        max-width: 100%;
+    }
+
+    .galeria a:last-child {
+        max-width: 100%;
+        grid-column: auto;
+    }
+
+    .galeria img {
+        border-radius: 10px;
+    }
+
+    /* Mapa responsivo */
+    iframe {
+        width: 100% !important;
+        height: 280px !important;
+        max-width: 100%;
+        border-radius: 10px;
+        display: block;
+        margin: 12px auto;
+    }
+
+    /* Rodapé reduzido */
+    footer {
+        font-size: 14px;
+        margin: 18px 12px 36px;
+    }
+
+    .LogoSesiSenai img {
+        max-width: 140px;
+        margin-bottom: 28px;
+    }
+
+    /* Evita que a onda (wave) cubra conteúdo clicável visualmente */
+    .wave {
+        height: 10.5em;
+    }
+
+    /* pequena melhoria para imagens dentro do menu/galeria para evitar overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
