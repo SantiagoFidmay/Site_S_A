@@ -386,6 +386,7 @@ footer {
 
 /* --- Ajustes específicos 390x844 --- */
 @media (max-width: 420px) {
+
     body {
         padding-top: 8px;
         -webkit-text-size-adjust: 100%;
