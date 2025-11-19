@@ -240,6 +240,17 @@ h1 {
     text-align: center;
     color: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background: #0f0f0f ;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px ;
+    width: 30%;
+    max-width: 850px;
+    margin: 30px auto;
+    overflow-x: auto;
+    box-shadow: 0 0 25px #0092CC;
+    border: 2px solid #0092CC;
+    transition: 0.3s;  
 }
 
 .calculadora h4 {

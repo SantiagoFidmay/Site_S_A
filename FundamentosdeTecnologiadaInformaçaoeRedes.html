@@ -7,7 +7,7 @@
     <title>Situação de Aprendizagem</title>
     <link rel="shortcut icon" href="./logo sesi.png" type="image/x-icon">
 
-    <!-- PRISM.JS (DESTACADOR DE CÓDIGO) -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
@@ -64,26 +64,7 @@ A memória principal (RAM) é uma memória temporária e volátil: armazena apen
 </div>
 <br><br><br>
 
-    <section class="galeria">
-        
-        <a href="./fundamentosEletroEletronica.html" >
-            <img src="./IMAGENS/fundamentos de eletroeletronica.png" alt="Imagem 1">
-        </a>
-        <a href="./logicaComputacional.html">
-            <img src="./IMAGENS/logica computacional.png" alt="Imagem 2">
-        </a>
-        <a href="./FundamentosdeBancodeDados.html">
-            <img src="./IMAGENS/Fundamentos de Banco de Dados.png" alt="Imagem 3">
-        </a>
-        <a href="./logicaDeProgramacao.html">
-            <img src="./IMAGENS/fundamentos de programacao.png" alt="Imagem 4">
-        </a>
-        <a href="./FundamentosdeTecnologiadaInformaçaoeRedes.html">
-            <img src="./IMAGENS/fundamentos de tecnologia da informacao e redes.png" alt="Imagem 5">
-        </a>
-    </section>
-
-    
+   
 
     <h5>Fundamentos de Redes </h5><br><br>
 
@@ -94,7 +75,7 @@ A memória principal (RAM) é uma memória temporária e volátil: armazena apen
 
     <h4>Quais os componentes de hardware de uma rede Wi-Fi?</h4><br> <h2>Uma rede Wi-Fi é composta pelo modem que recebe o sinal da operadora, pelo roteador Wi-Fi que converte esse sinal e o transmite por ondas de rádio, por antenas internas ou externas que melhoram o alcance, por access points que ampliam a cobertura em locais grandes, além dos dispositivos que se conectam, como celulares, notebooks e televisores. Em redes corporativas, também existem switches ligados ao roteador e aos access points para organizar os cabos que alimentam os equipamentos de rede. Mesmo uma rede Wi-Fi depende de cabos internos para interligar roteador e modem.</h2><br> <h4>Quais os componentes de hardware de uma rede local com cabo de rede?</h4><br> <h2>Uma rede cabeada é formada por cabos Ethernet, plugues RJ-45, switches que distribuem o sinal entre vários dispositivos, roteadores que conectam a rede local à internet, placas de rede presentes em cada equipamento, patch panels para organização da fiação e o modem que recebe o sinal do provedor. Redes com cabo são mais estáveis e oferecem menor latência, sendo muito usadas em escritórios, laboratórios, escolas e servidores.</h2><br> <h4>O que é um protocolo de comunicação?</h4><br> <h2>Um protocolo de comunicação é o conjunto de regras e padrões que define como os dados devem ser enviados, transmitidos e interpretados entre dispositivos. Ele especifica desde o formato dos pacotes até como eles devem ser ordenados, confirmados e entregues. Protocolos garantem que dispositivos diferentes, de marcas e sistemas distintos, consigam se comunicar perfeitamente.</h2><br> <h4>O que é o modelo OSI?</h4><br> <h2>O modelo OSI é uma divisão teórica da comunicação em sete camadas: física, enlace, rede, transporte, sessão, apresentação e aplicação. Cada camada representa um conjunto de funções, desde enviar sinais elétricos pelo cabo até interpretar dados que chegam a um software. Embora não seja o modelo usado na prática da internet, ele é fundamental para estudos de redes e para entender como os dados trafegam.</h2><br> <h4>E o modelo TCP/IP?</h4><br> <h2>O modelo TCP/IP é o modelo real usado na comunicação da internet. Ele divide toda a comunicação em quatro camadas: acesso à rede, internet, transporte e aplicação. É ele que define como pacotes são criados, enviados, roteados por grandes distâncias e entregues ao destino. Todo tráfego da internet funciona baseado nesse modelo, incluindo sites, e-mails, jogos e APIs.</h2><br> <h4>O que é o protocolo IPv4 e IPv6?</h4><br> <h2>O IPv4 é o padrão tradicional de endereçamento da internet. Ele usa endereços numéricos de 32 bits separados por pontos, como 192.168.0.10. Foi criado nos anos 80 e permite cerca de 4,3 bilhões de endereços, número que hoje é insuficiente devido ao aumento de dispositivos conectados no mundo. Já o IPv6 é o novo padrão que substitui o IPv4 e usa endereços de 128 bits, permitindo uma quantidade enorme de endereços disponíveis. Ele também melhora a segurança, possui estrutura mais moderna e facilita a roteação. Seus endereços têm formato hexadecimal, como 2001:db8:85a3::8a2e:370:7334.</h2><br> <h4>Como IP e TCP são configurados em Node.js?</h4><br> <h2>Em Node.js, a configuração do IP e da porta é feita ao criar o servidor. O programador define a porta e, se necessário, o endereço onde o servidor vai escutar. O sistema operacional cuida do IP real da máquina, enquanto o Node usa módulos como http ou frameworks como Express para receber e enviar dados usando o protocolo TCP por baixo. Quando você usa server.listen(3000, '0.0.0.0'), está configurando porta e IP para receber conexões.</h2><br> <h4>O que é o protocolo HTTP e HTTPS?</h4><br> <h2>O HTTP é o protocolo que permite a comunicação entre o navegador e o servidor web. Ele organiza as requisições feitas pelo cliente e as respostas enviadas pelo servidor, como páginas HTML, imagens, arquivos ou dados no formato JSON. O HTTPS é a versão segura do HTTP. Ele utiliza criptografia SSL/TLS para garantir que os dados transmitidos não sejam interceptados ou modificados por terceiros. Ele protege logins, transações bancárias, dados privados e qualquer comunicação sensível entre cliente e servidor.</h2><br> <h4>Exemplo de framework HTTP em Node.js:</h4><br> <h2>Um framework HTTP em Node.js é uma ferramenta que facilita criar servidores e APIs. O mais usado é o Express, que torna simples tarefas como criar rotas, enviar respostas, receber dados do frontend e organizar o código. Ele funciona com “middlewares”, que são funções ordenadas pelas quais toda requisição passa até receber uma resposta. O Express deixa o backend mais rápido de desenvolver, mais organizado e muito mais fácil de conectar com bancos de dados, autenticação e qualquer sistema do frontend. É basicamente a forma prática e profissional de trabalhar com HTTP dentro do Node.js.</h2><br>
 
-    <!-- 🔥 CÓDIGO NODE.JS DESTACADO COM PRISM -->
+    
     <h4>Exemplo de código Node.js com Express:</h4><br><br>
     <div class="code-container">
         <pre><code class="language-js">
