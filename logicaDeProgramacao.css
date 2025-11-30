@@ -305,7 +305,7 @@ h4{
     }
 }
 
-/* Celulares (até 600px) */
+
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -362,10 +362,10 @@ h4{
         max-width: 150px;
     }
 }
-/* --- Ajustes específicos para celulares (ex: 390x844) --- */
+
 @media (max-width: 420px) {
 
-    /* Garante um pouco de "respiro" do topo e remove margem gigante do h1 */
+    
     body {
         padding-top: 8px;
         -webkit-text-size-adjust: 100%;
@@ -380,7 +380,7 @@ h4{
         box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
 
-    /* Logo menor, centrado */
+   
     .logo {
         display: flex;
         justify-content: center;
@@ -388,12 +388,12 @@ h4{
     }
 
     .logo img {
-        height: 56px;    /* reduzido para caber melhor */
+        height: 56px;   
         max-width: 90%;
         object-fit: contain;
     }
 
-    /* Menu: tornamos vertical, sem sublinhado visual excessivo */
+    
     .menu {
         display: flex;
         flex-direction: column;
@@ -406,10 +406,10 @@ h4{
 
     .menu a {
         display: block;
-        text-decoration: none;      /* remove sublinhado */
-        font-size: 15px;            /* fonte menor para caber */
+        text-decoration: none;      
+        font-size: 15px;            
         line-height: 1.2;
-        color: #012a5a;             /* contraste com fundo branco */
+        color: #012a5a;            
         padding: 6px 8px;
         border-radius: 6px;
     }
@@ -419,7 +419,7 @@ h4{
         color: #003a8c;
     }
 
-    /* H1 e H2 mais compactos para não saírem da tela */
+    
     h1 {
         font-size: 26px;
         margin-top: 18px;
@@ -432,7 +432,7 @@ h4{
         max-width: 100%;
         padding: 0 14px;
         margin: 18px auto;
-        text-align: left;  /* leitura melhor no celular */
+        text-align: left;  
     }
 
     h3 {
@@ -440,7 +440,7 @@ h4{
         padding: 0 12px;
     }
 
-    /* Galeria: 1 coluna com imagens menores e sem overflow */
+  
     .galeria {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -457,7 +457,7 @@ h4{
         border-radius: 10px;
     }
 
-    /* Mapa responsivo */
+  
     iframe {
         width: 100% !important;
         height: 280px !important;
@@ -467,7 +467,7 @@ h4{
         margin: 12px auto;
     }
 
-    /* Rodapé reduzido */
+   
     footer {
         font-size: 14px;
         margin: 18px 12px 36px;
@@ -478,15 +478,196 @@ h4{
         margin-bottom: 28px;
     }
 
-    /* Evita que a onda (wave) cubra conteúdo clicável visualmente */
+   
     .wave {
         height: 10.5em;
     }
 
-    /* pequena melhoria para imagens dentro do menu/galeria para evitar overflow */
+    
     img {
         max-width: 100%;
         height: auto;
         display: block;
     }
+}
+
+
+.footer-sesi {
+    width: 100%;
+    background: linear-gradient(to bottom, #0071d4, #004a96);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+
+.footer-top-border {
+    width: 85%;
+    height: 2px;
+    background: white;
+    margin: 0 auto 45px auto;
+    opacity: 0.9;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.footer-logo-box {
+    background: white;
+    padding: 20px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+}
+
+.footer-logo-box img {
+    width: 200px;
+}
+
+.footer-info-area {
+    color: white;
+    max-width: 600px;
+}
+
+.footer-info-area h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+.footer-line-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.footer-line-info img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.soc {
+    width: 55px;
+    height: 55px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.soc:hover {
+    transform: scale(1.14);
+    background: #e2e2e2;
+}
+
+.soc img {
+    width: 28px;
+}
+
+.footer-creditos {
+    margin-top: 45px;
+    color: white;
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.footer-creditos a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 700px) {
+
+    .footer-logo-box img {
+        width: 160px;
+    }
+
+    .soc {
+        width: 48px;
+        height: 48px;
+    }
+
+    .soc img {
+        width: 24px;
+    }
+
+    .footer-line-info {
+        font-size: 15px;
+    }
+}
+
+
+.footer-row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+
+
+.footer-col {
+    flex: 1;
+}
+
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+
+.footer-creditos p {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        justify-content: center;
+        text-align: center;
+    }
+}
+p{
+    color: white;
+    font-size: 20px;
 }
