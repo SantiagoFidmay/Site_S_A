@@ -65,12 +65,14 @@ h1 {
 h2 {
     max-width: 1100px;
     margin: 30px auto;
-    text-align: center;  
+    text-align: justify;          /* deixa o bloco reto */
+    text-align-last: center;      /* centraliza só a última linha */
     font-size: 20px;
     line-height: 1.6;
     padding: 0 20px;
     color: white;
 }
+
 
 h3 {
     text-align: center;
